@@ -14,6 +14,7 @@ All examples where migrated from Java original code from Ms Valerio Fritelli for
 Each chapter cover a specific area of algorithms and design patterns
 
 ## Chapter 1
+Recursive algorithms
 
 ## Chapter 2
 Sorting algorithms 
@@ -26,3 +27,4 @@ cd build
 cmake ..
 make -j 4
 ```
+Check dependencies of examples

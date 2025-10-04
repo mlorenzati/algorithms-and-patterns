@@ -1,4 +1,5 @@
 #ifndef FRACTAL_H
+#define FRACTAL_H
 #include "graphicsConsole.h"
 
 class Fractal : public QObject {
@@ -15,5 +16,4 @@ private:
     GraphicsConsole& gc;
 };
 
-#define FRACTAL_H
 #endif

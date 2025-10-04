@@ -1,9 +1,9 @@
 #ifndef HILBERT_H
+#define HILBERT_H
 #include "graphicsConsole.h"
 
 #include <QObject>
 #include <QColor>
-#include "graphicsConsole.h"  // Your GraphicsConsole header
 
 class Hilbert : public QObject
 {
@@ -27,5 +27,4 @@ private:
     static constexpr int h0 = 512;
 };
 
-#define HILBERT_H
 #endif

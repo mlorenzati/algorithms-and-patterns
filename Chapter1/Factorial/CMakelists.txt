@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Project name and language
-project(Sorting LANGUAGES CXX)
+project(factorial LANGUAGES CXX)
 
 # Specify C++ standard
 set(CMAKE_CXX_STANDARD 17)
@@ -9,12 +9,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(
     ${CMAKE_SOURCE_DIR}
-    ${CMAKE_SOURCE_DIR}/../common
+    ${CMAKE_SOURCE_DIR}/../../common
     )
 
 # Add the executable
-add_executable(sorting 
+add_executable(factorial 
     ${CMAKE_CURRENT_LIST_DIR}/main.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/../common/console.cpp
-    ${CMAKE_CURRENT_LIST_DIR}/array.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../common/console.cpp
     )

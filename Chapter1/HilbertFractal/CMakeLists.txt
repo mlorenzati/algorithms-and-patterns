@@ -9,11 +9,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # Find Qt6 packages
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets)
 
+include_directories(
+    ${CMAKE_SOURCE_DIR}
+    ${CMAKE_SOURCE_DIR}/../../common
+    )
+
 # Create the executable
 add_executable(hilbertFractal
-    graphicsConsole.cpp
-    hilbert.cpp
-    main.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/../../common/graphicsConsole.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/hilbert.cpp
+    ${CMAKE_CURRENT_LIST_DIR}/main.cpp
     )
 
 # Link Qt libraries

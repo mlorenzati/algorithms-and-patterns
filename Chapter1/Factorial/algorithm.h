@@ -2,9 +2,13 @@
 #define ALGORITHM_H
 
 namespace Algorithm {
-    int recursiveFactorial(int n) {
+    int recursiveFactorial(int n, int &stackCount, int &spatialComplexity, int &temporalComplexity) {
+        stackCount++;
+        temporalComplexity++;
+        spatialComplexity = stackCount > spatialComplexity ? stackCount : spatialComplexity;
+
         if( n == 0 ) return 1;
-        return n * recursiveFactorial( n - 1 );
+        return n * recursiveFactorial(n - 1, stackCount, spatialComplexity, temporalComplexity);
     }
     
     int iterativeFactorial(int n) {

@@ -20,7 +20,7 @@ public:
         return instance;
     }
 
-    void clear();
+    void clear(const QColor& c);
     void drawText(int x, int y, const QString& text);
     void drawRect(int x, int y, int w, int h);
     void fillRect(int x, int y, int w, int h);
@@ -56,7 +56,7 @@ private:
 
     QImage buffer;
     CanvasWidget* canvas;
-    QColor color = Qt::black;
+    QColor color = Qt::white;
 };
 
 #endif

@@ -56,8 +56,8 @@ void GraphicsConsole::resizeEvent(QResizeEvent* event) {
     QMainWindow::resizeEvent(event);
 }
 
-void GraphicsConsole::clear() {
-    buffer.fill(Qt::white);
+void GraphicsConsole::clear(const QColor& c) {
+    buffer.fill(c);
     canvas->update();
 }
 

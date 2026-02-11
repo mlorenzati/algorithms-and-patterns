@@ -1,4 +1,4 @@
-#H ilbert Curves
+# Hilbert Curves
 Draw with recursion a Hibert Curves pattern
 
 # Description

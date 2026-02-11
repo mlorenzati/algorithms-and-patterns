@@ -3,6 +3,8 @@
 
 #include <list>
 #include <vector>
+#include <string>
+#include <algorithm>
 
 class Searcher {
 public:
